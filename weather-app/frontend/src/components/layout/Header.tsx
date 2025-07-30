@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../../contexts/AuthContext';
 import Button from '../ui/Button';
+import { useAuth } from '../../contexts/AuthContexts';
 
 const Header: React.FC = () => {
   const { user, logout, isAuthenticated } = useAuth();
