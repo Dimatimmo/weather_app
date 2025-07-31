@@ -1,0 +1,29 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Full-stack weather application with React frontend and Node.js backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install --prefix backend && npm install --prefix frontend",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "weather",
+    "react",
+    "nodejs",
+    "postgresql",
+    "fullstack"
+  ],
+  "author": "Dmytro Tymoshenko",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

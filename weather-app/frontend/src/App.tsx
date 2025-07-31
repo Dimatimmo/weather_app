@@ -1,13 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/layout/Header';
-import ProtectedRoute from './components/ProtectedRoute';
-import './App.css';
-import HomePage from './components/layout/HomePage';
-import LoginPage from './components/layout/LoginPage';
-import RegisterPage from './components/layout/RegisterPage';
-import { AuthProvider } from './contexts/AuthContexts';
-import DashboardPage from './components/layout/DashnoardPage';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/layout/Header";
+import ProtectedRoute from "./components/ProtectedRoute";
+import "./App.css";
+import HomePage from "./components/layout/HomePage";
+import LoginPage from "./components/layout/LoginPage";
+import RegisterPage from "./components/layout/RegisterPage";
+import { AuthProvider } from "./contexts/AuthContexts";
+import DashboardPage from "./components/layout/DashboardPage";
 
 function App() {
   return (
@@ -20,13 +20,13 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
-              <Route 
-                path="/dashboard" 
+              <Route
+                path="/dashboard"
                 element={
                   <ProtectedRoute>
                     <DashboardPage />
                   </ProtectedRoute>
-                } 
+                }
               />
             </Routes>
           </main>

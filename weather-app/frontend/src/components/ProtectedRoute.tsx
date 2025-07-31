@@ -1,7 +1,7 @@
-import React from 'react';
-import { Navigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContexts';
-import { FullScreenLoader } from '../components/ui/LoadingSpinner';
+import React from "react";
+import { Navigate } from "react-router-dom";
+import { useAuth } from "../contexts/AuthContexts";
+import { FullScreenLoader } from "./ui/LoadingSpinner";
 
 interface ProtectedRouteProps {
   children: React.ReactNode;
